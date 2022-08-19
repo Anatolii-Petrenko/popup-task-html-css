@@ -43,7 +43,6 @@ a {
 	height: 40px;
 	object-fit: cover;
 	opacity: 50%;
-	/* transition: all 0.s; */
 }
 
 .popup-icon {
@@ -148,15 +147,6 @@ a {
 	display: none;
 }
 
-.menu__item:focus,
-.popup__input:focus+.popup__label>.icon,
-.popup__item:focus,
-.more__input:focus+.more__label>.more__text {
-	border: 1px solid rgb(0, 0, 200);
-	border-radius: 2px;
-	box-shadow: 0px 0px 5px rgb(0, 0, 200);
-}
-
 .menu__item:hover,
 .popup__input:hover+.popup__label>.icon,
 .popup__item:hover {
@@ -165,7 +155,21 @@ a {
 	box-shadow: 0 0 5px rgb(50, 50, 50);
 }
 
+.menu__item:focus,
+.popup__input:focus+.popup__label>.icon,
+.popup__item:focus{
+	border: 1px solid rgb(0, 0, 200);
+	border-radius: 5px;
+	box-shadow: 0px 0px 5px rgb(0, 0, 200);
+}
+
+
 .more__input:hover+.more__label{
 	box-shadow: 0 0 5px rgb(50, 50, 50);
+	background-color: rgb(220, 220, 220);
+}
+
+.more__input:focus+.more__label{
+	box-shadow: 0 0 5px rgb(0, 0, 200);
 	background-color: rgb(220, 220, 220);
 }
