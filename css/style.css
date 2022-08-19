@@ -26,15 +26,14 @@ a {
 	border-radius: 10px;
 }
 
-
 .menu__list {
 	display: flex;
 }
 
-/* Delete */
 .menu__item {
-	/* margin: 0 auto; */
+	margin: 0 auto;
 	display: block;
+	border: 1px solid transparent;
 }
 
 .icon,
@@ -57,6 +56,10 @@ a {
 	cursor: pointer;
 }
 
+.popup__label .icon{
+	border: 1px solid transparent;
+}
+
 .popup__label {
 	cursor: pointer;
 }
@@ -67,13 +70,12 @@ a {
 	right: 30px;
 	top: 75px;
 	width: 320px;
-	height: 420px;
+	height: 430px;
 	overflow: auto;
 	background-color: rgb(235, 235, 235);
 	border: 2px solid rgb(50, 50, 50);
 	border-radius: 10px;
 }
-
 
 .popup__input:checked~.popup__body {
 	display: block;
@@ -86,8 +88,6 @@ a {
 	grid-template-rows: repeat(4 2fr);
 	justify-items: center;
 	align-items: center;
-	/* column-gap: 10px;
-	row-gap: 10px; */
 }
 
 .popup-more__list {
@@ -124,7 +124,10 @@ a {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	width: 86px;
+	height: auto;
 	padding: 10px;
+	border: 1px solid transparent;
 }
 
 .popup-more__list {
@@ -158,6 +161,11 @@ a {
 .popup__input:hover+.popup__label>.icon,
 .popup__item:hover {
 	border: 1px solid rgb(50, 50, 50);
-	border-radius: 2px;
+	border-radius: 5px;
 	box-shadow: 0 0 5px rgb(50, 50, 50);
+}
+
+.more__input:hover+.more__label{
+	box-shadow: 0 0 5px rgb(50, 50, 50);
+	background-color: rgb(220, 220, 220);
 }
