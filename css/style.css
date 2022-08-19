@@ -186,3 +186,9 @@ a {
 ::-webkit-scrollbar-thumb:hover {
 	background: rgb(150, 150, 150);
 }
+
+@media (max-width: 540px) {
+	.popup__body{
+		right: calc(50% - calc(320px / 2));
+	}
+}
